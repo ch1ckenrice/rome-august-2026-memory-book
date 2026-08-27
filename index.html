@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rome Through Our Eyes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-photo">
+      <img src="assets/photos/olena-05.jpg" alt="Colosseum lit in blue and yellow">
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow">August 2026</p>
+      <h1>Rome Through Our Eyes</h1>
+      <p>Three days, two perspectives, one small archive of heat, history, sea, pasta, and moments we will keep coming back to.</p>
+    </div>
+    <a class="hero-scroll" href="#days">See the story</a>
+  </header>
+
+  <main>
+    <section class="overview" aria-label="Trip overview">
+      <article>
+        <span id="totalCount">0</span>
+        <p>memories saved</p>
+      </article>
+      <article>
+        <span>3</span>
+        <p>days in Rome</p>
+      </article>
+      <article>
+        <span>2</span>
+        <p>voices telling it</p>
+      </article>
+    </section>
+
+    <section class="filters" aria-label="Memory filters">
+      <button class="active" type="button" data-filter="all">All</button>
+      <button type="button" data-filter="Dima">Dima</button>
+      <button type="button" data-filter="Olena">Olena</button>
+    </section>
+
+    <section class="days" id="days"></section>
+
+    <section class="closing">
+      <div>
+        <p class="eyebrow">Final note</p>
+        <h2>Not just a city. A feeling.</h2>
+      </div>
+      <p id="closingText"></p>
+    </section>
+  </main>
+
+  <script src="memories.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
